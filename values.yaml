@@ -1,0 +1,60 @@
+projectId: app-vgLfYXYRR2BJQo69d4G5ZL
+appName: shoppinghouse
+description: First application
+imageURL: http://image.com/image
+version: 1.0.0
+hostName: ""
+clusterURL: ""
+clusterIPs: []
+microservices:
+  My-User-Service:
+    serviceName: myuserservice
+    configs: []
+    avgReplicas: 0
+    minReplicas: 0
+    maxReplicas: 0
+    maxCPU: ""
+    maxMemory: ""
+    dockerImage: ""
+    containerPort: 0
+    envs: {}
+    serviceEvaluation:
+      kubeConfigType: []
+  MyCart Service:
+    serviceName: mycartservice
+    configs: []
+    avgReplicas: 0
+    minReplicas: 0
+    maxReplicas: 0
+    maxCPU: ""
+    maxMemory: ""
+    dockerImage: ""
+    containerPort: 0
+    envs: {}
+    serviceEvaluation:
+      kubeConfigType:
+      - statefulSetBased
+  MyOrderService:
+    serviceName: myorderservice
+    configs: []
+    avgReplicas: 0
+    minReplicas: 0
+    maxReplicas: 0
+    maxCPU: ""
+    maxMemory: ""
+    dockerImage: ""
+    containerPort: 0
+    envs: {}
+    serviceEvaluation:
+      kubeConfigType: []
+monitoring: false
+evaluationResult:
+  language: Java
+  database: MySQL
+  hasdockerized: false
+  haskubernetesservice: false
+  haskubernetesdeployment: false
+  microservices:
+  - CartService
+  - OrderService
+  - UserService
