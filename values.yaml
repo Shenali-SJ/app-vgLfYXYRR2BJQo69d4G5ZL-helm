@@ -7,8 +7,8 @@ hostName: ""
 clusterURL: ""
 clusterIPs: []
 microservices:
-  My-User-Service:
-    serviceName: myuserservice
+  CartService:
+    serviceName: cartservice
     configs: []
     avgReplicas: 0
     minReplicas: 0
@@ -20,8 +20,8 @@ microservices:
     envs: {}
     serviceEvaluation:
       kubeConfigType: []
-  MyCart Service:
-    serviceName: mycartservice
+  Orderervice:
+    serviceName: orderervice
     configs: []
     avgReplicas: 0
     minReplicas: 0
@@ -34,8 +34,8 @@ microservices:
     serviceEvaluation:
       kubeConfigType:
       - statefulSetBased
-  MyOrderService:
-    serviceName: myorderservice
+  UserService:
+    serviceName: userservice
     configs: []
     avgReplicas: 0
     minReplicas: 0
